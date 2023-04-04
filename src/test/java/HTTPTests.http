@@ -1,0 +1,11 @@
+### GET request with a current creditials
+GET http://localhost:8080/authorize?user=User 42&password=12345678
+Accept: application/json
+
+### GET request with a empty user
+GET http://localhost:8080/authorize?password=12345678
+Accept: application/json
+
+### GET request with a empty Authorities
+GET http://localhost:8080/authorize?user=User 1&password=12345678
+Accept: application/json
