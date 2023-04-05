@@ -5,7 +5,6 @@ import ru.netology.model.Authorities;
 import ru.netology.model.User;
 
 import java.util.List;
-import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
@@ -15,7 +14,6 @@ public final class FakeUserRepository implements UserRepository {
     private final ConcurrentMap<String, User> users = new ConcurrentHashMap<>();
 
     public FakeUserRepository() {
-        Random random = new Random();
         for (int i = 0; i <= 50; i++) {
             User user = new User("User " + i, "12345678");
             if (i % 2 == 0) {
