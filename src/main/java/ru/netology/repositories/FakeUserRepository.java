@@ -25,7 +25,7 @@ public final class FakeUserRepository implements UserRepository {
             if (i % 7 == 0) {
                 user.addAuthority(Authorities.DELETE);
             }
-            users.put(user.getUser(), user);
+            users.put(user.getName(), user);
         }
     }
 

@@ -1,0 +1,8 @@
+
+services:
+  app1:
+    build:
+      ./
+    image: 'home-02:latest'
+    ports:
+      - '8080:8080'

@@ -12,14 +12,14 @@ import java.util.List;
 public class User {
     @Size(min = 2, max = 50)
     @NotBlank
-    private String user;
+    private String name;
     @Size(min = 5, max = 50)
     @NotBlank
     private String password;
     private List<Authorities> authorities = new ArrayList<>();
 
     public User(String user, String password) {
-        this.user = user;
+        this.name = user;
         this.password = password;
     }
 
